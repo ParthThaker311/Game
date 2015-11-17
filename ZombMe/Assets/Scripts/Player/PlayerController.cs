@@ -4,11 +4,11 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
 	private float speed=0.1f;
-	private Rigidbody rb;
+	static public Rigidbody playerRigidBody;
 	// Use this for initialization
 	void Start () 
 	{
-		rb = GetComponent<Rigidbody>();
+		playerRigidBody = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -17,6 +17,6 @@ public class PlayerController : MonoBehaviour {
 		float moveHorizontal = Input.GetAxis ("Horizontal");
 		float moveVertical = Input.GetAxis ("Vertical");
 		Vector3 movement = new Vector3 (moveHorizontal*speed, 0.0f, moveVertical*speed);
-		rb.position = rb.position + movement;
+		playerRigidBody.position = playerRigidBody.position + movement;
 	}
 }
