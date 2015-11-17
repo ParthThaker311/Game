@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Enemies\ZombieWalking.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+     <None Include="Assets\ZombieTypes.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
