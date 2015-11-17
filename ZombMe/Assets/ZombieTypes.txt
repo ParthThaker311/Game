@@ -1,0 +1,3 @@
+Normal Zombie: speed = .01f
+Fast Zombie: speed = .03f
+Clinger Zombie: speed = 0.1f
